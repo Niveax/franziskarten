@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Website | Felix</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!---HEADER-------------->
+
+
+    <header>
+        <div id="logo">
+          <a href="#">
+          <img src="img/logo2.png" alt="Logo">
+          </a>
+          </div>
+
+          <nav id="main-nav">
+            <ul>
+              <li><a href="#home">Startseite</a></li>
+              <li><a href="#about">Über uns</a></li>
+              <li><a href="#work">Unser Arbeit</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <!---Home-------------->
+
+
+    <section id="home">
+      <hr>
+      <h1>Willkommen</h1>
+      <h2>Franziskarten</h2>
+      <a href="#about">
+        <img src="img/pfeil.png" alt="Pfeil">
+      </a>
+    </section>
+
+    <!---About-------------->
+
+
+    <section id="about">
+      <h3>Über uns</h3>
+      <hr>
+      <img src="img/avatar.png" alt="Avatar">
+      <h4>Kreuzburgteam</h4>
+      <p>Hier steht der Text der hier stehen soll</p>
+    </section>
+    <!---Work-------------->
+
+    <section id="work">
+      <h3>Unsere Karten</h3>
+      <hr>
+      <div id="projects">
+        <ul>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_01"></a></li>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_02"></a></li>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_03"></a></li>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_04"></a></li>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_05"></a></li>
+          <li><a href="#"><img src="img/Karte.jpg" alt="Projekt_06"></a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!---contact-------------->
+
+    <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["name"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+
+    <section id="contact">
+      <h3>Kontakt</h3>
+      <hr>
+      <form method="post" name="myForm" onsubmit="return validateForm()" class="form-box" action="index.php">
+        <input class="input_text" type="Name" tabindex="1"="" placeholder="Vollständiger Name" name="name"><br>
+        <input class="input_text" type="E-Mail" tabindex="1"="" placeholder="E-Mail" name="Email"><br>
+        <input class="input_text" type="text" tabindex="2"="" placeholder="Betreff" name="Betreff"><br>
+        <textarea class="input_text" type="Nachricht" tabindex="3" placeholder="Nachricht" name="Nachricht"></textarea><br>
+        <input class="button" type="submit" value="Send" name="submit"/>
+      </form>
+    </section>
+
+
+
+    <!---FOOTER-------------->
+
+    <footer>
+      <p>&copy; 2020-2021 Niveax
+      </p>
+    </footer>
+  </body>
+</html>
